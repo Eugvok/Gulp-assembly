@@ -1,0 +1,181 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html.lock, body.lock {
+  overflow: hidden;
+}
+
+@media (max-width: 1170px) {
+  html.lock, body.lock {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+  }
+}
+
+input, button, textarea {
+  font-family: "Rubik";
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+ol {
+  counter-reset: ol-numbers;
+}
+
+ol li {
+  position: relative;
+  padding: 0px 0px 0px 0px;
+}
+
+ol li::before {
+  counter-increment: ol-numbers;
+  content: counter(ol-numbers) ")";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  text-align: right;
+  color: #000;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*?END RESET SCSS*/
+.conteiner {
+  max-width: 1170pxpx;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 1182px) {
+  .conteiner {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 992.98px) {
+  .conteiner {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+/*?END UTILITS SCSS*/
+@font-face {
+  font-family: AkzidenzGroteskBQ;
+  font-display: swap;
+  src: url("../fonts/AkzidenzGroteskBQ-BdCnd.woff2") format("woff2"), url("../fonts/AkzidenzGroteskBQ-BdCnd.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PTSans;
+  font-display: swap;
+  src: url("../fonts/PTSans-Regular.woff2") format("woff2"), url("../fonts/PTSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url("//src/fonts/PTSans-Regular.eot");
+  src: local("☺"), url("//src/fonts/PTSans-Regular.woff") format("woff"), url("//src/fonts/PTSans-Regular.ttf") format("truetype"), url("//src/fonts/PTSans-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AkzidenzGroteskBQ';
+  src: url("//src/fonts/AkzidenzGroteskBQ-BdCnd.eot");
+  src: local("☺"), url("//src/fonts/AkzidenzGroteskBQ-BdCnd.woff") format("woff"), url("//src/fonts/AkzidenzGroteskBQ-BdCnd.ttf") format("truetype"), url("//src/fonts/AkzidenzGroteskBQ-BdCnd.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*?END FONTS SCSS*/
+/*!BODY WRAPPER*/
+/*?END BODY WRAPPER*/
+/*!HEADER*/
+/*?END HEADER*/
+/*!CORPUS*/
+/*?END CORPUS*/
+/*!FOOTER*/
+/*?END FOOTER*/
+/*# sourceMappingURL=style.css.map */

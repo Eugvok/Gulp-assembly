@@ -1,0 +1,48 @@
+//!<Миксины>
+@mixin anim ($time,$delay){-webkit-transition: all $time ease $delay;-moz-transition: all $time ease $delay;-ms-transition: all $time ease $delay;-o-transition: all $time ease $delay;}
+@mixin anim_cubic($time,$delay){-webkit-transition: all $time cubic-bezier(0.68,-0.55,0.265,1.55) $delay;-moz-transition: all $time cubic-bezier(0.68,-0.55,0.265,1.55) $delay;-ms-transitionall: $time cubic-bezier(0.68,-0.55,0.265,1.55) $delay;-o-transition: all $time cubic-bezier(0.68,-0.55,0.265,1.55) $delay;}
+@mixin rotate($deg){-webkit-transform: rotate($deg);-moz-transform: rotate($deg);-ms-transform: rotate($deg);-o-transform: rotate($deg);transform: rotate($deg);}
+@mixin scale($num){-webkit-transform: scale($num);-moz-transform: scale($num);-ms-transform: scale($num);-o-transform: scale($num);transform: scale($num);}                       
+@mixin skew($num){-webkit-transform: skew($num);-moz-transform: skew($num);-ms-transform: skew($num);-o-transform: skew($num);transform: skew($num);}
+@mixin cnt($h){display: flex;flex-direction: column;height: $h;text-align: center;align-items: stretch;justify-content: center;}
+@mixin tr($x,$y,$z){transform: translate3d($x,$y,$z);}
+@mixin flexbox(){display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; font-size: 0;}
+@mixin flexorder($val){-webkit-box-ordinal-group: $val;-moz-box-ordinal-group: $val;-ms-flex-order: $val;-webkit-order:$val;order: $val;}
+@mixin flex($dis:flex,$jc:center,$ai:center){display: $dis; justify-content: $jc; align-items: $ai;}
+//?</миксины>
+
+//!<Переменные>
+$minwidth:320px; //min-width
+$mw:1170px; //max-width
+$md1:$mw+12px; 
+$md2:992.98px;
+$md3:767.98px;
+$md4:479.98px;
+//?</переменные>
+//! FONT SIZE
+//todo$fz:100px; <!--font-size: $fz;-->
+//! COLOR
+//todo $col1: red; <!--color: $col1; -->
+//!ШАБЛОНЫ
+//! %tplborder {
+//!  border: 1px solid red;
+//! }
+// ?<!-- @extend %tplborder; / @extend .tplborder; -->
+//!МИКСИНЫ
+//! @mixin fontz($f, $c) {
+//!  font-size: $f;
+//!  color: $c;
+//! }
+//? <!-- @includ fontz(15px,red); -->
+//!<ОСНОВНАЯ СЕТКА>
+.conteiner{max-width:$mw+px;margin: 0 auto;width: 100%;
+	// @media (max-width:$md1+px){max-width: 970px;}
+	@media (max-width:$md1){max-width: 750px;}
+	@media (max-width:$md2){max-width: none;padding: 0 10px;}
+}
+//?</Основная сетка>
+
+//!<Подключение файлов UI стилей форм и готовых классов>
+//@import "forms.scss";
+// @import "ui.scss";
+//?</Подключение файлов UI стилей форм и готовых классов>

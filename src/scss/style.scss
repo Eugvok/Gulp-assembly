@@ -1,0 +1,31 @@
+@import "./parts/reset.scss";
+/*?END RESET SCSS*/
+@import "./parts/utilits.scss";
+/*?END UTILITS SCSS*/
+@import "./parts/fonts.scss";
+/*?END FONTS SCSS*/
+
+/*!BODY WRAPPER*/ //!BODY WRAPPER
+//body {}
+// .wrapper {width: 100%;min-height: 100%;overflow: hidden;
+	// &.loaded{}   //todo}
+/*?END BODY WRAPPER*/
+//!<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
+/*!HEADER*/ //!HEADER
+@import "./parts/header.scss";
+/*?END HEADER*/
+
+/*!CORPUS*/ //!CORPUS
+
+/*?END CORPUS*/
+
+/*!FOOTER*/ //!FOOTER
+@import "./parts/footer.scss";
+/*?END FOOTER*/
+
+//!</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
+// @import "datepicker.scss";
+// @import "popover.min.scss";
+// @import "baguetteBox.scss";
+// @import "pagging.scss";
+//?</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
